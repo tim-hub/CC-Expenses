@@ -1,5 +1,8 @@
 <template>
   <q-page class="flex flex-center">
+
+  <commit-chart></commit-chart>
+
   <q-btn
     round
     color="primary"
@@ -18,8 +21,12 @@
 </style>
 
 <script>
+import CommitChart from './charts/CommitChart'
 export default {
   name: 'PageIndex',
+  components: {
+    CommitChart
+  },
   methods: {
     nav_create () {
       this.$router.push({
@@ -27,6 +34,5 @@ export default {
       })
     }
   }
-
 }
 </script>
