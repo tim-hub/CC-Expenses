@@ -32,18 +32,55 @@
         link
         inset-delimiter
       >
-        <q-list-header>Essential Links</q-list-header>
-        <q-item @click.native="openURL('http://quasar-framework.org')">
+        <q-list-header></q-list-header>
+        <q-item to="/">
           <q-item-side icon="school" />
           <q-item-main label="Docs" sublabel="quasar-framework.org" />
         </q-item>
 
+        <q-list-header></q-list-header>
+
+                <q-item to="/create">
+          <q-item-side icon="school" />
+          <q-item-main label="Docs" sublabel="quasar-framework.org" />
+        </q-item>
       </q-list>
     </q-layout-drawer>
 
     <q-page-container>
+      <q-tabs
+      >
+  <q-route-tab
+    icon="attach_money"
+    to="/"
+    exact
+    slot="title"
+    label="Transact"
+
+  />
+  <q-route-tab
+    width="100px"
+    icon="account_balance_wallet"
+    to="/create"
+    exact
+    slot="title"
+    label="  Balance "
+  />
+
+  <q-route-tab
+    icon="bar_chart"
+    to="/create"
+    exact
+    slot="title"
+    label="   Goal👍"
+  />
+      </q-tabs>
       <router-view />
     </q-page-container>
+
+    <q-layout-footer>
+      <!-- content; any -->
+    </q-layout-footer>
   </q-layout>
 </template>
 
