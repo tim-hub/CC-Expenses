@@ -1,6 +1,6 @@
 # CC Expenses
-![Licenss](LICENSE)
-![Contribution](CONTRIBUTING.md)
+[License](LICENSE)
+[Contribution](CONTRIBUTING.md)
 
 - a free and open source app
 - cross-platform
