@@ -3,7 +3,6 @@
     <q-layout-header>
       <q-toolbar
         color="primary"
-        :glossy="$q.theme === 'mat'"
         :inverted="$q.theme === 'ios'"
       >
         <q-btn
@@ -50,30 +49,30 @@
     <q-page-container>
       <q-tabs
       >
-  <q-route-tab
-    icon="attach_money"
-    to="/"
-    exact
-    slot="title"
-    label="Transact"
+        <q-route-tab
+          icon="attach_money"
+          to="/"
+          exact
+          slot="title"
+          label="Transact"
 
-  />
-  <q-route-tab
-    width="100px"
-    icon="account_balance_wallet"
-    to="/create"
-    exact
-    slot="title"
-    label="  Balance "
-  />
+        />
+        <q-route-tab
+          width="100px"
+          icon="account_balance_wallet"
+          to="/create"
+          exact
+          slot="title"
+          label="  Balance "
+        />
 
-  <q-route-tab
-    icon="bar_chart"
-    to="/create"
-    exact
-    slot="title"
-    label="   Goal👍"
-  />
+        <q-route-tab
+          icon="bar_chart"
+          to="/create"
+          exact
+          slot="title"
+          label="   Goal👍"
+        />
       </q-tabs>
       <router-view />
     </q-page-container>
