@@ -16,8 +16,8 @@
         </q-btn>
 
         <q-toolbar-title>
-          OS Exp
-          <div slot="subtitle">Running on Quasar v{{ $q.version }}</div>
+          CC Expenses
+          <!-- <div slot="subtitle">Running on Quasar v{{ $q.version }}</div> -->
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
@@ -47,7 +47,13 @@
     </q-layout-drawer>
 
     <q-page-container>
-      <q-tabs
+
+      <router-view />
+    </q-page-container>
+
+    <q-layout-footer>
+      <!-- content; any -->
+      <q-tabs position="bottom"
       >
         <q-route-tab
           icon="attach_money"
@@ -74,11 +80,6 @@
           label="   Goal👍"
         />
       </q-tabs>
-      <router-view />
-    </q-page-container>
-
-    <q-layout-footer>
-      <!-- content; any -->
     </q-layout-footer>
   </q-layout>
 </template>
