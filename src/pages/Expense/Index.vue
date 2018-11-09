@@ -21,7 +21,7 @@
 </style>
 
 <script>
-import CommitChart from './charts/CommitChart'
+import CommitChart from '../charts/CommitChart'
 export default {
   name: 'PageIndex',
   components: {

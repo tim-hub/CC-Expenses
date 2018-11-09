@@ -4,21 +4,21 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/Expense/Index.vue') }
     ]
   },
   {
     path: '/create',
     component: () => import('layouts/BackLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Create.vue') }
+      { path: '', component: () => import('pages/Expense/Create.vue') }
     ]
   },
   {
     path: '/gym',
     component: () => import('layouts/GymBoxLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/Expense/Index.vue') }
     ]
   }
 ]
