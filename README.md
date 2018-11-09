@@ -1,7 +1,8 @@
 # CC Personal Box
 This is an open source cross-platform application structure.
 
-**User Story**
+**User Story**:
+<br>
 Many applications are necessary in my daily life, for example, expense tracking and exercise, and need basic features are required, but not the applications with complex features, tracking service.
 
 This is what CC Personal Box for, building a personal, private cross-platform and easy-to-use applications without data leaking, with basic features which are just enough.
