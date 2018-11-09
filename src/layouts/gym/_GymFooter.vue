@@ -5,7 +5,7 @@
       >
         <q-route-tab
 
-          to="/"
+          to="/start"
           exact
           slot="title"
           label="Start"

@@ -23,6 +23,20 @@ const routes = [
     ]
   },
   {
+    path: '/start/pushoff',
+    component: () => import('layouts/GymBoxLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/GymBox/PushOff.vue') }
+    ]
+  },
+  {
+    path: '/start/plank',
+    component: () => import('layouts/GymBoxLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/GymBox/Plank.vue') }
+    ]
+  },
+  {
     path: '/stats',
     component: () => import('layouts/GymBoxLayout.vue'),
     children: [
