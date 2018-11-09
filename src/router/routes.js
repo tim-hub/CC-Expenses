@@ -2,9 +2,17 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MyLayout.vue'),
+    component: () => import('layouts/GymBoxLayout.vue'),
     children: [
       { path: '', component: () => import('pages/GymBox/Index.vue') }
+    ]
+  },
+  // start the routes for expense
+  {
+    path: '/expense',
+    component: () => import('layouts/MyLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Expense/Index.vue') }
     ]
   },
   {
@@ -14,11 +22,26 @@ const routes = [
       { path: '', component: () => import('pages/Expense/Create.vue') }
     ]
   },
+  // start the routes for gym box
   {
     path: '/gym',
     component: () => import('layouts/GymBoxLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Expense/Index.vue') }
+      { path: '', component: () => import('pages/GymBox/Index.vue') }
+    ]
+  },
+  {
+    path: '/start',
+    component: () => import('layouts/GymBoxLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/GymBox/Start.vue') }
+    ]
+  },
+  {
+    path: '/stats',
+    component: () => import('layouts/GymBoxLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/GymBox/Stats.vue') }
     ]
   }
 ]

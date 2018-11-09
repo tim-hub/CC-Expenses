@@ -18,7 +18,7 @@
         </q-btn>
 
         <q-toolbar-title>
-          Prayer Box
+          Back
           <div slot="subtitle">
             <!-- Running on Quasar v{{ $q.version }} -->
           </div>

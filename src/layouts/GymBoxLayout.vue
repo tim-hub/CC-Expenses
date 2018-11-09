@@ -6,18 +6,19 @@
       <router-view />
     </q-page-container>
 
-    <q-layout-footer>
-    </q-layout-footer>
+    <gym-footer></gym-footer>
   </q-layout>
 </template>
 
 <script>
 import HeaderDrawer from './_HeaderDrawer'
+import GymFooter from './_GymFooter'
 
 export default {
   name: 'MyLayout',
   components: {
-    'h-drawer': HeaderDrawer
+    'h-drawer': HeaderDrawer,
+    'gym-footer': GymFooter
   }
 }
 </script>

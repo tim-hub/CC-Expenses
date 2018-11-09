@@ -5,45 +5,18 @@
 
       <router-view />
     </q-page-container>
-
-    <q-layout-footer>
-      <!-- content; any -->
-      <q-tabs position="bottom"
-      >
-        <q-route-tab
-          icon="attach_money"
-          to="/"
-          exact
-          slot="title"
-          label="Transact"
-        />
-        <q-route-tab
-          width="100px"
-          icon="account_balance_wallet"
-          to="/create"
-          exact
-          slot="title"
-          label="  Balance "
-        />
-
-        <q-route-tab
-          icon="bar_chart"
-          to="/create"
-          exact
-          slot="title"
-          label="   Goal👍"
-        />
-      </q-tabs>
-    </q-layout-footer>
+    <h-footer></h-footer>
   </q-layout>
 </template>
 
 <script>
 import HeaderDrawer from './_HeaderDrawer'
+import ExpenseFooter from './_ExpenseFooter'
 export default {
   name: 'MyLayout',
   components: {
-    'h-drawer': HeaderDrawer
+    'h-drawer': HeaderDrawer,
+    'h-footer': ExpenseFooter
   },
   data () {
     return {
