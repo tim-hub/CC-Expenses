@@ -42,12 +42,17 @@
           <q-item-main label="Center" sublabel="my own dashboard and all prayer history" />
         </q-item>
 
+        <q-item to="/credits">
+          <q-item-side icon="face" />
+          <q-item-main label="Credits" sublabel="Many thanks" />
+        </q-item>
+
       </q-list>
       <q-list
         link
         inset-delimiter
       >
-        <q-list-header>CC Expense</q-list-header>
+        <q-list-header>More from CC Private Box</q-list-header>
         <q-item to="/credits">
           <q-item-side icon="face" />
           <q-item-main label="Credits" sublabel="Many thanks" />
