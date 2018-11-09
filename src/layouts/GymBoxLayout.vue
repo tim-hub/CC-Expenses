@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import HeaderDrawer from './_HeaderDrawer'
-import GymFooter from './_GymFooter'
+import HeaderDrawer from './gym/_Drawer'
+import GymFooter from './gym/_GymFooter'
 
 export default {
   name: 'MyLayout',
