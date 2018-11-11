@@ -2,11 +2,11 @@
 <q-list highlight>
   <q-list-header>Applications</q-list-header>
   <q-item>
-    <q-item-side>
+    <!-- <q-item-side>
       <q-item-tile avatar>
         <img src="statics/boy-avatar.png">
       </q-item-tile>
-    </q-item-side>
+    </q-item-side> -->
     <q-item-main >
         <q-btn class="vertical-top" color="secondary" size="xl" to="/start/pushup">
         Push-ups
@@ -26,7 +26,7 @@
     </div>
 
   <q-item>
-    <q-item-side avatar="statics/linux-avatar.png" />
+    <!-- <q-item-side avatar="statics/linux-avatar.png" /> -->
     <q-item-main >
       <q-btn color="primary" size="xl" to="/start/plank">
         Plank
