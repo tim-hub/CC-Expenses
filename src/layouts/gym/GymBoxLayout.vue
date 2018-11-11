@@ -11,13 +11,14 @@
 </template>
 
 <script>
-import HeaderDrawer from './gym/_Drawer'
-import GymFooter from './gym/_GymFooter'
+
+import Drawer from './_HeaderDrawer'
+import GymFooter from './_GymFooter'
 
 export default {
   name: 'MyLayout',
   components: {
-    'h-drawer': HeaderDrawer,
+    'h-drawer': Drawer,
     'gym-footer': GymFooter
   }
 }

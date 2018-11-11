@@ -2,7 +2,7 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/GymBoxLayout.vue'),
+    component: () => import('layouts/gym/GymBoxLayout.vue'),
     children: [
       { path: '', component: () => import('pages/GymBox/Index.vue') }
     ]
@@ -10,35 +10,28 @@ const routes = [
   // start the routes for gym box
   {
     path: '/gym',
-    component: () => import('layouts/GymBoxLayout.vue'),
+    component: () => import('layouts/gym/GymBoxLayout.vue'),
     children: [
       { path: '', component: () => import('pages/GymBox/Index.vue') }
     ]
   },
   {
-    path: '/start',
-    component: () => import('layouts/GymBoxLayout.vue'),
+    path: '/start/pushup',
+    component: () => import('layouts/gym/BackLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/GymBox/Start.vue') }
-    ]
-  },
-  {
-    path: '/start/pushoff',
-    component: () => import('layouts/GymBoxLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/GymBox/PushOff.vue') }
+      { path: '', component: () => import('pages/GymBox/PushUp.vue') }
     ]
   },
   {
     path: '/start/plank',
-    component: () => import('layouts/GymBoxLayout.vue'),
+    component: () => import('layouts/gym/GymBoxLayout.vue'),
     children: [
       { path: '', component: () => import('pages/GymBox/Plank.vue') }
     ]
   },
   {
     path: '/stats',
-    component: () => import('layouts/GymBoxLayout.vue'),
+    component: () => import('layouts/gym/GymBoxLayout.vue'),
     children: [
       { path: '', component: () => import('pages/GymBox/Stats.vue') }
     ]

@@ -16,12 +16,11 @@
         </q-btn>
 
         <q-toolbar-title>
-          CC Expenses
+          CC Gym Box
           <!-- <div slot="subtitle">Running on Quasar v{{ $q.version }}</div> -->
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
-
     <q-layout-drawer
       v-model="leftDrawerOpen"
       :content-class="$q.theme === 'mat' ? 'bg-grey-2' : null"

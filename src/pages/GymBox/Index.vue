@@ -1,12 +1,18 @@
 <template>
   <q-page class="flex flex-center">
-
-  <!-- <commit-chart></commit-chart> -->
-    <q-btn size="12em">
-      H
-    </q-btn>
+    <!-- combine plank and pushups -->
+    <div class="col-md-12">
+            <q-btn class="vertical-top" color="secondary" size="xl" to="/start/pushup">
+        Push-ups
+      </q-btn>
+    </div>
+    <p> </p>
+    <div class="col-md-12">
+      <q-btn color="primary" size="xl" to="/start/plank">
+        Plank
+      </q-btn>
+    </div>
   </q-page>
-
 </template>
 
 <style>
